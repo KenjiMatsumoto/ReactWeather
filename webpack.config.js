@@ -25,6 +25,7 @@ module.exports = {
   },
   resolve: {
     root: __dirname,
+    //aliasの指定
     alias: {
       Main: 'app/components/Main.jsx',
       Nav: 'app/components/Nav.jsx',
@@ -33,7 +34,8 @@ module.exports = {
       WeatherMessage: 'app/components/WeatherMessage.jsx',
       About: 'app/components/About.jsx',
       Examples: 'app/components/Examples.jsx',
-      openWeatherMap: 'app/api/openWeatherMap.jsx'
+      openWeatherMap: 'app/api/openWeatherMap.jsx',
+      ErrorModal: 'app/components/ErrorModal.jsx'
     },
     //ビルド対象に含めたい(requireしている)ファイルの拡張子を指定します
     extentions: ['','.js','.jsx']
@@ -56,5 +58,7 @@ module.exports = {
       }
     ]
   },
+  //以下の記述をすることでbundleファイルでの参照ではなく
+  //自分で作成したファイルでのdebugが可能となる
   devtool: 'cheap-module-eval-source-map'
 };
