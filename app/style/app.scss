@@ -1,0 +1,10 @@
+$titleMargin: 2.5rem;
+
+.page-title {
+  margin-top: $titleMargin;
+  margin-bottom: $titleMargin;
+}
+
+input[type=search] {
+  box-shadow: none;
+}
