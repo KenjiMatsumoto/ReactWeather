@@ -12,7 +12,7 @@ require('style!css!foundation-sites/dist/foundation.min.css')
 $(document).foundation();
 
 //cssファイルの読み込み
-require('style!css!applicationStyles')
+require('style!css!sass!applicationStyles')
 
 //メイン処理
 ReactDOM.render(

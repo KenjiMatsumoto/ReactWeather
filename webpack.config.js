@@ -36,7 +36,7 @@ module.exports = {
       Examples: 'app/components/Examples.jsx',
       openWeatherMap: 'app/api/openWeatherMap.jsx',
       ErrorModal: 'app/components/ErrorModal.jsx',
-      applicationStyles: 'app/style/app.css'
+      applicationStyles: 'app/style/app.scss'
     },
     //ビルド対象に含めたい(requireしている)ファイルの拡張子を指定します
     extentions: ['','.js','.jsx']
